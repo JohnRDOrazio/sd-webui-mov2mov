@@ -43,7 +43,7 @@ def InputAccordion_init(self, *args, **kwargs):
 
 original_IOComponent_init = patches.patch(
     __name__,
-    obj=gradio.components.IOComponent,
+    obj=gradio.components.Component,
     field="__init__",
     replacement=IOComponent_init,
 )
